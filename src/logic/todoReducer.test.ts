@@ -4,7 +4,7 @@ import type { AppState } from './types'
 
 const addAction = {
   type: 'add' as const, id: '1', title: 'Task', priority: 'high' as const,
-  tags: ['work'], createdAt: '2026-07-06T00:00:00Z',
+  tags: ['work'], dueDate: '2026-07-10', createdAt: '2026-07-06T00:00:00Z',
 }
 
 describe('todoReducer', () => {
@@ -18,10 +18,16 @@ describe('todoReducer', () => {
     const s2 = todoReducer(s1, { type: 'toggle', id: '1' })
     expect(s2.todos[0].done).toBe(true)
   })
-  it('edit applies changes', () => {
+  it('edit applies changes and preserves untouched fields', () => {
     const s1 = todoReducer(initialState, addAction)
     const s2 = todoReducer(s1, { type: 'edit', id: '1', changes: { title: 'New', priority: 'low' } })
+    // Changed fields
     expect(s2.todos[0]).toMatchObject({ title: 'New', priority: 'low' })
+    // Untouched fields must survive the merge
+    expect(s2.todos[0].id).toBe('1')
+    expect(s2.todos[0].done).toBe(false)
+    expect(s2.todos[0].tags).toEqual(['work'])
+    expect(s2.todos[0].dueDate).toBe('2026-07-10')
   })
   it('delete removes todo', () => {
     const s1 = todoReducer(initialState, addAction)

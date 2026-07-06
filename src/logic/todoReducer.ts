@@ -1,7 +1,7 @@
 import type { AppState, Action, Todo } from './types'
 import { defaultState } from './storage'
 
-export const initialState: AppState = defaultState
+export const initialState: AppState = { ...defaultState }
 
 export function todoReducer(state: AppState, action: Action): AppState {
   switch (action.type) {
