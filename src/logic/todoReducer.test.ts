@@ -1,0 +1,43 @@
+import { describe, it, expect } from 'vitest'
+import { todoReducer, initialState } from './todoReducer'
+import type { AppState } from './types'
+
+const addAction = {
+  type: 'add' as const, id: '1', title: 'Task', priority: 'high' as const,
+  tags: ['work'], createdAt: '2026-07-06T00:00:00Z',
+}
+
+describe('todoReducer', () => {
+  it('add appends a todo', () => {
+    const s = todoReducer(initialState, addAction)
+    expect(s.todos).toHaveLength(1)
+    expect(s.todos[0]).toMatchObject({ id: '1', title: 'Task', priority: 'high', done: false, tags: ['work'] })
+  })
+  it('toggle flips done', () => {
+    const s1 = todoReducer(initialState, addAction)
+    const s2 = todoReducer(s1, { type: 'toggle', id: '1' })
+    expect(s2.todos[0].done).toBe(true)
+  })
+  it('edit applies changes', () => {
+    const s1 = todoReducer(initialState, addAction)
+    const s2 = todoReducer(s1, { type: 'edit', id: '1', changes: { title: 'New', priority: 'low' } })
+    expect(s2.todos[0]).toMatchObject({ title: 'New', priority: 'low' })
+  })
+  it('delete removes todo', () => {
+    const s1 = todoReducer(initialState, addAction)
+    const s2 = todoReducer(s1, { type: 'delete', id: '1' })
+    expect(s2.todos).toHaveLength(0)
+  })
+  it('add trims title and ignores blank', () => {
+    const s = todoReducer(initialState, { ...addAction, title: '   ' })
+    expect(s.todos).toHaveLength(0)
+  })
+  it('setFilter/setSearch/setSort/setTheme update fields', () => {
+    let s: AppState = initialState
+    s = todoReducer(s, { type: 'setSearch', search: 'x' })
+    s = todoReducer(s, { type: 'setSort', sort: 'priority' })
+    s = todoReducer(s, { type: 'setTheme', theme: 'dark' })
+    s = todoReducer(s, { type: 'setFilter', filter: { status: 'active' } })
+    expect(s).toMatchObject({ search: 'x', sort: 'priority', theme: 'dark', filter: { status: 'active' } })
+  })
+})
