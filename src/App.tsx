@@ -48,7 +48,8 @@ export default function App() {
           onSort={s => dispatch({ type: 'setSort', sort: s })} />
         <TodoList todos={visibleTodos} now={now} emptyMessage={emptyMessage}
           onToggle={id => dispatch({ type: 'toggle', id })}
-          onDelete={id => dispatch({ type: 'delete', id })} />
+          onDelete={id => dispatch({ type: 'delete', id })}
+          onEdit={(id, changes) => dispatch({ type: 'edit', id, changes })} />
       </div>
     </div>
   )
