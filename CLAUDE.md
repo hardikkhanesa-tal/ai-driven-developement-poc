@@ -1,0 +1,83 @@
+# Project Instructions (CLAUDE.md)
+
+> These instructions override Superpowers' default skill behavior for this project.
+> Per `using-superpowers`: "User instructions (CLAUDE.md, AGENTS.md, GEMINI.md, etc,
+> direct requests) take precedence over skills, which in turn override default behavior."
+
+## Superpowers Workflow Overrides
+
+This project uses the **default Superpowers workflow** for `using-git-worktrees`
+and `test-driven-development` — both are **fully enabled, unmodified**:
+
+- `using-git-worktrees` — create an isolated worktree/branch per feature, as normal.
+- `test-driven-development` — strict RED-GREEN-REFACTOR enforced: write the
+  failing test first, watch it fail, write minimal code, watch it pass, commit.
+  Code written before its test is deleted, no exceptions.
+
+The only customizations for this project are the following two:
+
+### 1. `brainstorming` — MODIFIED (question style changed)
+
+**Do not ask design-clarifying questions one at a time.** Instead:
+
+- Batch up to 4–5 related questions together in a single message, then wait
+  for answers before asking follow-ups.
+- Before the design doc is finalized, it must include a
+  `## Deployment Considerations` section (filled in by the new
+  `deploy-checklist` step below — see step ordering).
+- Everything else about `brainstorming` (exploring alternatives, presenting
+  design in digestible chunks, saving the design doc) stays the same.
+
+### 2. `deploy-checklist` — NEW CUSTOM STEP
+
+A new skill, `deploy-checklist`, runs **immediately after `brainstorming`
+is approved and before `using-git-worktrees` / `writing-plans` starts**. It
+walks through deployment/release requirements (environments, migrations,
+feature flags, dependencies, rollback plan, monitoring, downtime) while the
+design is still fresh, and appends the answers to the design doc as
+`## Deployment Considerations`.
+
+- This skill's file lives at `skills/deploy-checklist/SKILL.md` in the
+  Superpowers plugin directory (or your project's local skills override
+  location).
+- Skip this step only if the human partner explicitly says the change has no
+  deployment impact.
+
+## Full Workflow for This Project
+
+1. **brainstorming** *(modified — batched questions, see above)*
+2. **deploy-checklist** *(new — see above)*
+3. **using-git-worktrees** *(default, unmodified — creates isolated workspace)*
+4. **writing-plans** — takes the `## Deployment Considerations` section as
+   part of its input spec; tasks for migrations/flags/infra get explicit
+   plan steps, not an afterthought.
+5. **subagent-driven-development** / **executing-plans** — executes the plan.
+6. **test-driven-development** *(default, unmodified — strict RED-GREEN-REFACTOR)*
+7. **requesting-code-review** — runs between/after tasks.
+8. **finishing-a-development-branch** — runs at the end (merge/PR/discard).
+
+So the effective workflow for this project is:
+
+```
+brainstorming (batched Qs) → deploy-checklist (NEW) → using-git-worktrees
+   → writing-plans → subagent-driven-development (or executing-plans)
+   → test-driven-development (strict) → requesting-code-review
+   → finishing-a-development-branch
+```
+
+## Notes for the Agent
+
+- `using-git-worktrees` and `test-driven-development` run exactly per their
+  default Superpowers definitions — no relaxation, no skipping.
+- `brainstorming` runs with modified question style (batched, not
+  one-at-a-time) per the rules above, and must hand off to `deploy-checklist`
+  before `using-git-worktrees`/`writing-plans` starts.
+- `deploy-checklist` is a custom skill added for this project — invoke it
+  right after design approval, every time, unless told the change has no
+  deployment impact.
+- All other Superpowers skills (writing-plans, subagent-driven-development,
+  executing-plans, requesting-code-review, receiving-code-review,
+  finishing-a-development-branch, systematic-debugging,
+  verification-before-completion, dispatching-parallel-agents) remain fully
+  active and unmodified.
+- If in doubt about a conflict between this file and a skill, this file wins.
