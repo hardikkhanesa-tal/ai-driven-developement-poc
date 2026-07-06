@@ -19,4 +19,14 @@ describe('dateStatus', () => {
   it('returns upcoming when beyond 48h', () => {
     expect(dateStatus('2026-07-10T12:00:00Z', now)).toBe('upcoming')
   })
+  it('date-only string equal to local today is not overdue (parsed as local end-of-day)', () => {
+    // Simulate a user in a non-UTC timezone: local 9am on Jul 6, 2026
+    // new Date(2026, 6, 6, 9, 0, 0) is LOCAL time regardless of machine timezone
+    const localNow = new Date(2026, 6, 6, 9, 0, 0)
+    // A date-only string "2026-07-06" must NOT be treated as overdue at local 9am
+    const result = dateStatus('2026-07-06', localNow)
+    expect(result).not.toBe('overdue')
+    // It should be due-soon or upcoming (local end-of-day is still in the future at 9am)
+    expect(['due-soon', 'upcoming']).toContain(result)
+  })
 })
