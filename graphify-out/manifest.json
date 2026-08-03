@@ -1,0 +1,292 @@
+{
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/settings.local.json": {
+    "mtime": 1785721635.0626218,
+    "ast_hash": "76174c19e8b7b7fe007229d22596fe1e",
+    "semantic_hash": "76174c19e8b7b7fe007229d22596fe1e"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.mcp.json": {
+    "mtime": 1785721653.1436675,
+    "ast_hash": "c2a8a1876ec9a7d677417c7751fac13a",
+    "semantic_hash": "c2a8a1876ec9a7d677417c7751fac13a"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.remember/tmp/last-ndc.ts": {
+    "mtime": 1785722033.8673468,
+    "ast_hash": "e8115693398b8450d6a67c1bf49df2d4",
+    "semantic_hash": "e8115693398b8450d6a67c1bf49df2d4"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.remember/tmp/last-save.json": {
+    "mtime": 1785722033.3170924,
+    "ast_hash": "b9f513cf7f3ab3569773f3014a6c43f4",
+    "semantic_hash": "b9f513cf7f3ab3569773f3014a6c43f4"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/package.json": {
+    "mtime": 1783339950.6382468,
+    "ast_hash": "4ac24c28d1fb6001929a6c212a7631b0",
+    "semantic_hash": "4ac24c28d1fb6001929a6c212a7631b0"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/postcss.config.js": {
+    "mtime": 1783339950.638501,
+    "ast_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0",
+    "semantic_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/App.tsx": {
+    "mtime": 1783339950.6388733,
+    "ast_hash": "4f78f9303f4766c54586ddf6eaea2ff8",
+    "semantic_hash": "4f78f9303f4766c54586ddf6eaea2ff8"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/components/FilterBar.tsx": {
+    "mtime": 1783339950.6392758,
+    "ast_hash": "1e6119510b953e78498c838659640078",
+    "semantic_hash": "1e6119510b953e78498c838659640078"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/components/SearchBox.tsx": {
+    "mtime": 1783339950.639514,
+    "ast_hash": "92ad84de4b2bb8848e68def51f433e13",
+    "semantic_hash": "92ad84de4b2bb8848e68def51f433e13"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/components/ThemeToggle.tsx": {
+    "mtime": 1783339950.6400247,
+    "ast_hash": "88b3885cc9339d12f115818704a22e64",
+    "semantic_hash": "88b3885cc9339d12f115818704a22e64"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/components/TodoForm.tsx": {
+    "mtime": 1783339950.640375,
+    "ast_hash": "238941a65c030854bb7a3436d3c5ff8d",
+    "semantic_hash": "238941a65c030854bb7a3436d3c5ff8d"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/components/TodoItem.tsx": {
+    "mtime": 1783339950.6406376,
+    "ast_hash": "c3bbb08bb0ab6c056aa48c23ede105e5",
+    "semantic_hash": "c3bbb08bb0ab6c056aa48c23ede105e5"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/components/TodoList.tsx": {
+    "mtime": 1783339950.640822,
+    "ast_hash": "9bb31dbe8385ac09c30ad4048ac2f3b2",
+    "semantic_hash": "9bb31dbe8385ac09c30ad4048ac2f3b2"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/hooks/useTodos.ts": {
+    "mtime": 1783339950.6411183,
+    "ast_hash": "6a6590f3cf53bc5f9c57a69b54ef1b5f",
+    "semantic_hash": "6a6590f3cf53bc5f9c57a69b54ef1b5f"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/dateStatus.test.ts": {
+    "mtime": 1783339950.6419208,
+    "ast_hash": "1f8c6b81009062b8fa073e5434923168",
+    "semantic_hash": "1f8c6b81009062b8fa073e5434923168"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/dateStatus.ts": {
+    "mtime": 1783339950.642127,
+    "ast_hash": "6dfdbc1623aa2f198f91fff2b6191e0b",
+    "semantic_hash": "6dfdbc1623aa2f198f91fff2b6191e0b"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/filter.test.ts": {
+    "mtime": 1783339950.6424792,
+    "ast_hash": "1414d981131d8eec240d7176ca8a8e7e",
+    "semantic_hash": "1414d981131d8eec240d7176ca8a8e7e"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/filter.ts": {
+    "mtime": 1783339950.6430085,
+    "ast_hash": "53ecaaad96a010ac93ca41aeb3e49d5c",
+    "semantic_hash": "53ecaaad96a010ac93ca41aeb3e49d5c"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/sort.test.ts": {
+    "mtime": 1783339950.6432507,
+    "ast_hash": "450e3a32b6d665363abedcedeecac86e",
+    "semantic_hash": "450e3a32b6d665363abedcedeecac86e"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/sort.ts": {
+    "mtime": 1783339950.6434674,
+    "ast_hash": "95a5029adcf548d73107ef6fe922c5f9",
+    "semantic_hash": "95a5029adcf548d73107ef6fe922c5f9"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/storage.test.ts": {
+    "mtime": 1783339950.6438088,
+    "ast_hash": "55a90623f232892047f51c3ffb35576e",
+    "semantic_hash": "55a90623f232892047f51c3ffb35576e"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/storage.ts": {
+    "mtime": 1783339950.6441214,
+    "ast_hash": "359d01e06b5bd511fc4523afbbd6b655",
+    "semantic_hash": "359d01e06b5bd511fc4523afbbd6b655"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/todoReducer.test.ts": {
+    "mtime": 1783339950.6444628,
+    "ast_hash": "60c3eb968ef8a3cf6ae4126c1e313eec",
+    "semantic_hash": "60c3eb968ef8a3cf6ae4126c1e313eec"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/todoReducer.ts": {
+    "mtime": 1783339950.6446784,
+    "ast_hash": "84e12525a83ab6dc2679aaf21b2aab00",
+    "semantic_hash": "84e12525a83ab6dc2679aaf21b2aab00"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/logic/types.ts": {
+    "mtime": 1783339950.6449478,
+    "ast_hash": "4185f1e7b91928d048e75cdba8c9649d",
+    "semantic_hash": "4185f1e7b91928d048e75cdba8c9649d"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/main.tsx": {
+    "mtime": 1783339950.645141,
+    "ast_hash": "a3150907ddf2842367caa98e12a33298",
+    "semantic_hash": "a3150907ddf2842367caa98e12a33298"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/src/vite-env.d.ts": {
+    "mtime": 1783339950.6453025,
+    "ast_hash": "0352474ba2918efe13895edbc3780d94",
+    "semantic_hash": "0352474ba2918efe13895edbc3780d94"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/tailwind.config.js": {
+    "mtime": 1783339950.645482,
+    "ast_hash": "2cdba7ae206663bd3ac21848c84fb83c",
+    "semantic_hash": "2cdba7ae206663bd3ac21848c84fb83c"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/tsconfig.json": {
+    "mtime": 1783339950.6457026,
+    "ast_hash": "163caddf78f94a819b6e81b56c94bab9",
+    "semantic_hash": "163caddf78f94a819b6e81b56c94bab9"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/vite.config.ts": {
+    "mtime": 1783339950.6459594,
+    "ast_hash": "f95dbc7223d575a014bde065e64ab386",
+    "semantic_hash": "f95dbc7223d575a014bde065e64ab386"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/vitest.setup.ts": {
+    "mtime": 1783339950.6464505,
+    "ast_hash": "f5beee14a39b8a9754d3c61b25988f95",
+    "semantic_hash": "f5beee14a39b8a9754d3c61b25988f95"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/commands/opsx/apply.md": {
+    "mtime": 1785471375.143959,
+    "ast_hash": "8ac311f21403e9e7e0293f494febd351",
+    "semantic_hash": "8ac311f21403e9e7e0293f494febd351"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/commands/opsx/archive.md": {
+    "mtime": 1785471375.1453547,
+    "ast_hash": "bd3a1d00db5200806b639c40ee69b235",
+    "semantic_hash": "bd3a1d00db5200806b639c40ee69b235"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/commands/opsx/explore.md": {
+    "mtime": 1785471375.143651,
+    "ast_hash": "a4395a30697291e1c1a204252df4bdf5",
+    "semantic_hash": "a4395a30697291e1c1a204252df4bdf5"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/commands/opsx/propose.md": {
+    "mtime": 1785471375.1456306,
+    "ast_hash": "96785eeeeeafa9351c23accc56f0b9a1",
+    "semantic_hash": "96785eeeeeafa9351c23accc56f0b9a1"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/commands/opsx/sync.md": {
+    "mtime": 1785471375.144978,
+    "ast_hash": "be9d6126ed90f60dd60f73a13246357a",
+    "semantic_hash": "be9d6126ed90f60dd60f73a13246357a"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/commands/opsx/update.md": {
+    "mtime": 1785471375.1445014,
+    "ast_hash": "7da86670033afd55c5e204d20eeda3c1",
+    "semantic_hash": "7da86670033afd55c5e204d20eeda3c1"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/skills/openspec-apply-change/SKILL.md": {
+    "mtime": 1785471375.1403897,
+    "ast_hash": "73640d98e355e3e4a5ecaa6116865a82",
+    "semantic_hash": "73640d98e355e3e4a5ecaa6116865a82"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/skills/openspec-archive-change/SKILL.md": {
+    "mtime": 1785471375.1418703,
+    "ast_hash": "ee587087578ab9d2d283ad5b1f76371e",
+    "semantic_hash": "ee587087578ab9d2d283ad5b1f76371e"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/skills/openspec-explore/SKILL.md": {
+    "mtime": 1785471375.139785,
+    "ast_hash": "c4c6fe598e86d13378e0b5ecd202cec6",
+    "semantic_hash": "c4c6fe598e86d13378e0b5ecd202cec6"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/skills/openspec-propose/SKILL.md": {
+    "mtime": 1785471375.1423178,
+    "ast_hash": "140ba650e1a73dbb6d77948ccc1e2e59",
+    "semantic_hash": "140ba650e1a73dbb6d77948ccc1e2e59"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/skills/openspec-sync-specs/SKILL.md": {
+    "mtime": 1785471375.1413357,
+    "ast_hash": "079b8e1435f5044f2563b273bd192616",
+    "semantic_hash": "079b8e1435f5044f2563b273bd192616"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.claude/skills/openspec-update-change/SKILL.md": {
+    "mtime": 1785471375.140873,
+    "ast_hash": "bad1ef5d059980feeb2852f5f42367bb",
+    "semantic_hash": "bad1ef5d059980feeb2852f5f42367bb"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.remember/archive.md": {
+    "mtime": 1785721619.5589347,
+    "ast_hash": "5fa160db09b2b295d79b3693705cdd70",
+    "semantic_hash": "5fa160db09b2b295d79b3693705cdd70"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.remember/now.md": {
+    "mtime": 1785722042.9934216,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.remember/recent.md": {
+    "mtime": 1785721619.5563033,
+    "ast_hash": "e0dc7e2046396eb5da99b58b8714700c",
+    "semantic_hash": "e0dc7e2046396eb5da99b58b8714700c"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/.remember/today-2026-07-31.done.md": {
+    "mtime": 1785471643.8332121,
+    "ast_hash": "5068a0f86a87127751f10a57761e70c3",
+    "semantic_hash": "5068a0f86a87127751f10a57761e70c3"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/CLAUDE.md": {
+    "mtime": 1783335300.171934,
+    "ast_hash": "00df29576b1480780d35e6cb4ce1cd7f",
+    "semantic_hash": "00df29576b1480780d35e6cb4ce1cd7f"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/docs/superpowers/plans/2026-07-06-todo-app.md": {
+    "mtime": 1783335845.7555888,
+    "ast_hash": "35e8f46c8e66dd7f90f7f53c25a147c2",
+    "semantic_hash": "35e8f46c8e66dd7f90f7f53c25a147c2"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/docs/superpowers/specs/2026-07-06-todo-app-design.md": {
+    "mtime": 1783335575.180296,
+    "ast_hash": "152e55f0c655c6d54210062b90e98653",
+    "semantic_hash": "152e55f0c655c6d54210062b90e98653"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/index.html": {
+    "mtime": 1783339950.63715,
+    "ast_hash": "dd8361dc8685c6a78fd83abdfdb4f8cb",
+    "semantic_hash": "dd8361dc8685c6a78fd83abdfdb4f8cb"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/openspec/changes/user-specific-task-feature/.openspec.yaml": {
+    "mtime": 1785471435.958243,
+    "ast_hash": "ddf60b86140b78924976483066c7bf40",
+    "semantic_hash": "ddf60b86140b78924976483066c7bf40"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/openspec/changes/user-specific-task-feature/design.md": {
+    "mtime": 1785471516.423068,
+    "ast_hash": "45da6ec35b6f3842cba2b1bc35244037",
+    "semantic_hash": "45da6ec35b6f3842cba2b1bc35244037"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/openspec/changes/user-specific-task-feature/proposal.md": {
+    "mtime": 1785471487.2078936,
+    "ast_hash": "26b16ba5178a86589a610682fd653a08",
+    "semantic_hash": "26b16ba5178a86589a610682fd653a08"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/openspec/changes/user-specific-task-feature/specs/todo-storage/spec.md": {
+    "mtime": 1785471543.5275066,
+    "ast_hash": "ac80a00ec40d84d96a39ac111a99f99e",
+    "semantic_hash": "ac80a00ec40d84d96a39ac111a99f99e"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/openspec/changes/user-specific-task-feature/specs/user-profiles/spec.md": {
+    "mtime": 1785471536.9666429,
+    "ast_hash": "ec82eee2ec50ea9565e9d55308fe803b",
+    "semantic_hash": "ec82eee2ec50ea9565e9d55308fe803b"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/openspec/changes/user-specific-task-feature/tasks.md": {
+    "mtime": 1785471561.249403,
+    "ast_hash": "3f3505c1ef2065d426a2acbb19f82676",
+    "semantic_hash": "3f3505c1ef2065d426a2acbb19f82676"
+  },
+  "/Users/hardikk/Documents/talentica/AI Ninja/superpower-poc-extra-skills/openspec/config.yaml": {
+    "mtime": 1785471375.1461787,
+    "ast_hash": "9e3e7672b387a282583011181ab35f9a",
+    "semantic_hash": "9e3e7672b387a282583011181ab35f9a"
+  }
+}
