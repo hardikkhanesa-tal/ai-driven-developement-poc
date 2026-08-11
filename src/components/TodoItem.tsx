@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import type { Todo } from '../logic/types'
+import type { KanbanStatus, Todo } from '../logic/types'
 import { dateStatus } from '../logic/dateStatus'
 
 const PRIORITY_BORDER: Record<Todo['priority'], string> = {
@@ -9,12 +9,19 @@ const STATUS_BADGE: Record<string, string> = {
   overdue: 'bg-rose-100 text-rose-700', 'due-soon': 'bg-amber-100 text-amber-700',
   upcoming: 'bg-sky-100 text-sky-700', none: 'hidden',
 }
+const KANBAN_LABEL: Record<KanbanStatus, string> = {
+  todo: 'To Do', 'in-progress': 'In Progress', done: 'Done',
+}
+const KANBAN_SELECT_COLOR: Record<KanbanStatus, string> = {
+  todo: 'bg-slate-100 text-slate-700', 'in-progress': 'bg-sky-100 text-sky-700', done: 'bg-emerald-100 text-emerald-700',
+}
 
-export function TodoItem({ todo, now, onToggle, onDelete, onEdit }: {
+export function TodoItem({ todo, now, onToggle, onDelete, onEdit, onStatusChange }: {
   todo: Todo; now: Date
   onToggle: (id: string) => void
   onDelete: (id: string) => void
   onEdit: (id: string, changes: { title: string }) => void
+  onStatusChange: (id: string, status: KanbanStatus) => void
 }) {
   const status = dateStatus(todo.dueDate, now)
   const [editing, setEditing] = useState(false)
@@ -82,6 +89,16 @@ export function TodoItem({ todo, now, onToggle, onDelete, onEdit }: {
           ))}
         </div>
       </div>
+      <select
+        value={todo.status}
+        onChange={e => onStatusChange(todo.id, e.target.value as KanbanStatus)}
+        aria-label="status"
+        className={`text-xs rounded-full px-2 py-0.5 border-none cursor-pointer ${KANBAN_SELECT_COLOR[todo.status]}`}
+      >
+        {(Object.keys(KANBAN_LABEL) as KanbanStatus[]).map(s => (
+          <option key={s} value={s}>{KANBAN_LABEL[s]}</option>
+        ))}
+      </select>
       {!editing && (
         <button
           onClick={() => !todo.done && setEditing(true)}

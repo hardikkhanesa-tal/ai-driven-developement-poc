@@ -11,12 +11,25 @@ describe('todoReducer', () => {
   it('add appends a todo', () => {
     const s = todoReducer(initialState, addAction)
     expect(s.todos).toHaveLength(1)
-    expect(s.todos[0]).toMatchObject({ id: '1', title: 'Task', priority: 'high', done: false, tags: ['work'] })
+    expect(s.todos[0]).toMatchObject({ id: '1', title: 'Task', priority: 'high', done: false, status: 'todo', tags: ['work'] })
   })
-  it('toggle flips done', () => {
+  it('toggle flips done and mirrors status', () => {
     const s1 = todoReducer(initialState, addAction)
     const s2 = todoReducer(s1, { type: 'toggle', id: '1' })
     expect(s2.todos[0].done).toBe(true)
+    expect(s2.todos[0].status).toBe('done')
+    const s3 = todoReducer(s2, { type: 'toggle', id: '1' })
+    expect(s3.todos[0].done).toBe(false)
+    expect(s3.todos[0].status).toBe('todo')
+  })
+  it('setStatus updates status and mirrors done', () => {
+    const s1 = todoReducer(initialState, addAction)
+    const s2 = todoReducer(s1, { type: 'setStatus', id: '1', status: 'in-progress' })
+    expect(s2.todos[0].status).toBe('in-progress')
+    expect(s2.todos[0].done).toBe(false)
+    const s3 = todoReducer(s2, { type: 'setStatus', id: '1', status: 'done' })
+    expect(s3.todos[0].status).toBe('done')
+    expect(s3.todos[0].done).toBe(true)
   })
   it('edit applies changes and preserves untouched fields', () => {
     const s1 = todoReducer(initialState, addAction)

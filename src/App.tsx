@@ -49,7 +49,8 @@ export default function App() {
         <TodoList todos={visibleTodos} now={now} emptyMessage={emptyMessage}
           onToggle={id => dispatch({ type: 'toggle', id })}
           onDelete={id => dispatch({ type: 'delete', id })}
-          onEdit={(id, changes) => dispatch({ type: 'edit', id, changes })} />
+          onEdit={(id, changes) => dispatch({ type: 'edit', id, changes })}
+          onStatusChange={(id, status) => dispatch({ type: 'setStatus', id, status })} />
       </div>
     </div>
   )

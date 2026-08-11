@@ -4,6 +4,8 @@ export type SortKey = 'priority' | 'dueDate' | 'created';
 
 export type StatusFilter = 'all' | 'active' | 'done';
 
+export type KanbanStatus = 'todo' | 'in-progress' | 'done';
+
 export interface Filter {
   status: StatusFilter;
   priority?: Priority;
@@ -14,6 +16,7 @@ export interface Todo {
   id: string;
   title: string;
   done: boolean;
+  status: KanbanStatus;
   priority: Priority;
   dueDate?: string;
   tags: string[];
@@ -31,6 +34,7 @@ export interface AppState {
 export type Action =
   | { type: 'add'; title: string; priority: Priority; dueDate?: string; tags: string[]; id: string; createdAt: string }
   | { type: 'toggle'; id: string }
+  | { type: 'setStatus'; id: string; status: KanbanStatus }
   | { type: 'edit'; id: string; changes: Partial<Pick<Todo, 'title' | 'priority' | 'dueDate' | 'tags'>> }
   | { type: 'delete'; id: string }
   | { type: 'setFilter'; filter: Filter }

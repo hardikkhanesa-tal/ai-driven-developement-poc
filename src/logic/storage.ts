@@ -1,4 +1,4 @@
-import type { AppState } from './types'
+import type { AppState, Todo } from './types'
 
 const KEY = 'todo-app-state'
 
@@ -16,7 +16,8 @@ export function loadState(): AppState {
     if (!raw) return defaultState
     const parsed = JSON.parse(raw)
     if (!parsed || !Array.isArray(parsed.todos)) return defaultState
-    return { ...defaultState, ...parsed }
+    const todos = parsed.todos.map((t: Todo) => ({ ...t, status: t.status ?? (t.done ? 'done' : 'todo') }))
+    return { ...defaultState, ...parsed, todos }
   } catch {
     return defaultState
   }
