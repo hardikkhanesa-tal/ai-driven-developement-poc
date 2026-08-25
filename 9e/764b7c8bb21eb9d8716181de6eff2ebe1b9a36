@@ -1,0 +1,38 @@
+.claude/agents/team-reviewer.md
+  h_a5d992e335226f 1-28
+.claude/skills/gitnexus/gitnexus-cli/SKILL.md
+  h_a5d992e335226f 1-86
+.claude/skills/gitnexus/gitnexus-debugging/SKILL.md
+  h_a5d992e335226f 1-101
+.claude/skills/gitnexus/gitnexus-exploring/SKILL.md
+  h_a5d992e335226f 1-78
+.claude/skills/gitnexus/gitnexus-guide/SKILL.md
+  h_a5d992e335226f 1-138
+.claude/skills/gitnexus/gitnexus-impact-analysis/SKILL.md
+  h_a5d992e335226f 1-97
+.claude/skills/gitnexus/gitnexus-refactoring/SKILL.md
+  h_a5d992e335226f 1-121
+.claude/skills/pr-description/SKILL.md
+  h_a5d992e335226f 1-33
+.gitignore
+  h_a5d992e335226f 5-7
+AGENTS.md
+  h_a5d992e335226f 1-44
+CLAUDE.md
+  h_a5d992e335226f 84-128
+apm.lock.yaml
+  h_a5d992e335226f 1-46
+apm.yml
+  h_a5d992e335226f 1-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "9e764b7c8bb21eb9d8716181de6eff2ebe1b9a36",
+  "prompts": {},
+  "humans": {
+    "h_a5d992e335226f": {
+      "author": "Hardik Khanesa <hardik.khanesa@talentica.com>"
+    }
+  }
+}
