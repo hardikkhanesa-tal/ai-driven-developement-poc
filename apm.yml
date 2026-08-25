@@ -1,0 +1,7 @@
+name: superpower poc
+version: 1.0.0
+description: Skills and agents for our team's review workflow
+author: hardikkhanesa-tal
+dependencies:
+  apm:
+    - hardikkhanesa-tal/team-skills
