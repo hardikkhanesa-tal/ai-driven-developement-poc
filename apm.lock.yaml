@@ -1,0 +1,46 @@
+lockfile_version: '1'
+generated_at: '2026-08-24T04:07:27.154909+00:00'
+apm_version: 0.28.0
+dependencies:
+- repo_url: hardikkhanesa-tal/team-skills
+  name: team-skills
+  host: github.com
+  resolved_commit: 300b0233bb6bfd7f37006480124604c9a8681d61
+  version: 1.0.0
+  package_type: apm_package
+  deployed_files:
+  - .claude/agents/team-reviewer.md
+  - .claude/skills/pr-description
+  - .claude/skills/pr-description/SKILL.md
+  deployed_file_hashes:
+    .claude/agents/team-reviewer.md: sha256:e9e5d513ed7875be7658c8b684addd27cabccb3aafa385b7da3cc805bcf061f2
+    .claude/skills/pr-description/SKILL.md: sha256:cec25ba501f7adecb51ffaa1fb3034741a7d585f6434b7fe93c20b9c85e8ec78
+  content_hash: sha256:923f3981fa7cf53bd44106e0c21062bb72d1986254d5deb93c9345679eba1aa5
+deployments:
+- kind: project-relative
+  target: claude
+  value: .claude/agents/team-reviewer.md
+  runtime: null
+  scope: project
+  owners:
+  - hardikkhanesa-tal/team-skills
+  active_owner: hardikkhanesa-tal/team-skills
+  content_hash: sha256:e9e5d513ed7875be7658c8b684addd27cabccb3aafa385b7da3cc805bcf061f2
+- kind: project-relative
+  target: claude
+  value: .claude/skills/pr-description
+  runtime: null
+  scope: project
+  owners:
+  - hardikkhanesa-tal/team-skills
+  active_owner: hardikkhanesa-tal/team-skills
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/pr-description/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - hardikkhanesa-tal/team-skills
+  active_owner: hardikkhanesa-tal/team-skills
+  content_hash: sha256:cec25ba501f7adecb51ffaa1fb3034741a7d585f6434b7fe93c20b9c85e8ec78

@@ -9,13 +9,25 @@ export function todoReducer(state: AppState, action: Action): AppState {
       const title = action.title.trim()
       if (!title) return state
       const todo: Todo = {
-        id: action.id, title, done: false, priority: action.priority,
+        id: action.id, title, done: false, status: 'todo', priority: action.priority,
         dueDate: action.dueDate, tags: action.tags, createdAt: action.createdAt,
       }
       return { ...state, todos: [...state.todos, todo] }
     }
     case 'toggle':
-      return { ...state, todos: state.todos.map(t => t.id === action.id ? { ...t, done: !t.done } : t) }
+      return {
+        ...state,
+        todos: state.todos.map(t => t.id === action.id
+          ? { ...t, done: !t.done, status: !t.done ? 'done' : 'todo' }
+          : t),
+      }
+    case 'setStatus':
+      return {
+        ...state,
+        todos: state.todos.map(t => t.id === action.id
+          ? { ...t, status: action.status, done: action.status === 'done' }
+          : t),
+      }
     case 'edit':
       return { ...state, todos: state.todos.map(t => t.id === action.id ? { ...t, ...action.changes } : t) }
     case 'delete':

@@ -3,7 +3,7 @@ import { sortTodos } from './sort'
 import type { Todo } from './types'
 
 const t = (over: Partial<Todo>): Todo => ({
-  id: '1', title: 'x', done: false, priority: 'med', tags: [], createdAt: '2026-01-01T00:00:00Z', ...over,
+  id: '1', title: 'x', done: false, status: 'todo', priority: 'med', tags: [], createdAt: '2026-01-01T00:00:00Z', ...over,
 })
 
 describe('sortTodos', () => {
